@@ -1,61 +1,161 @@
 @charset "UTF-8";
+body {
+}
 
 header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
 
+.caixa {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #c78c19;
 }
 
 
-body {
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0px;
+}
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0px 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.produtos li:hover {
+    border-color:#c78c19;
     
 }
-.titulo-principal {
-    padding-left: 20px;
+
+.produtos li:hover > h2 {
+    font-size: 34px;
+    
 }
 
-.principal {
-    background-color: #CCCCCC;
-    padding: 30px;
+.produtos li:active {
+    border-color: #088C19;
 }
 
-.centralizado {
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.preco {
+    font-size: 22px;
+    font-weight: bolder;
+    margin: 10px 0 0;
+}
+
+.descricao {
+    font-size: 18px;
+    
+}
+
+footer {
     text-align: center;
+    background-color: #cccccc;
+    background-image: url(imagens/bg.jpg);
+    padding: 40px 0;
 }
 
-p {
-    text-align: center;
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin: 20px 0 0;
 }
-p#italico {
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
     font-size: 20px;
+    margin: 0 0 10px 0;
 }
 
-em strong {
-    color: red;
-}
-
-#banner {
-    width: 100%;
-
-}
-
-.itens {
-    font-style: italic;
-}
-
-.beneficios {
-    background-color: white;
-    padding: 20px;
-}
-
-
-ul{
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
-
-
-}
-
-.imagembeneficios {
+.input-padrao {
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 10px 25px;
     width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.7s all;
+}
+
+.enviar:hover {
+    background-color: darkorange;
+    color: black;
+    
+    transform:scale(1.2);
+}
+
+table {
+    margin: 20px 0px 40px;
+}
+
+thead {
+    background-color: #555555;
+    color: white;
+    font-weight: bold;
+}
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
 }
